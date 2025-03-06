@@ -1,7 +1,10 @@
 export const RootRoute =()=> {
 return <div className="flex flex-wrap gap-4 item-center justify-center">
-    {data.map((item)=><Card{...item}/>)}
-        
+    {data.map((item)=>{
+        return <div className="f w">{item.name}
+        <img src ={item.image}></img>
+        </div>
+        })}
 </div>
 }
 const data = [
